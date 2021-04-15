@@ -20,7 +20,7 @@ class Ac:
     def __init__(self, suhu,iden):
         self.suhu = suhu
     def ubah(suhu):
-        print(f"Suhu ruangan sekarang adalah {suhu}")
+        print(f"Suhu ruangan berhasil diubah ke {suhu}°C")
 
 
 
