@@ -8,7 +8,7 @@ la.identitas()
 li = functions.nama("Abdullah Faqih Mubarak","Didi Suhardi","Felisiana Ardelia Azzahra","Zakia Marrit")
 li.anggota()
 
-print("================ Pengaturan AC ================")
+print("\n================ Pengaturan AC ================\n")
 
 run = True
 #perulangan while
@@ -18,24 +18,24 @@ while run:
     
     #pengkondisian
     if kondisi == "Ya":
-        print ("AC menyala")
+        print ("AC berhasil dinyalakan")
         suhu = input("\nMasukkan suhu yang anda inginkan = ")
         Ac.ubah(suhu)
 
         On = True
         while On:            
-            kondisi = input("\nApakah kamu ingin mengganti suhu (Ya/Tidak)? ")
+            kondisi = input("\nApakah anda ingin mengganti suhu (Ya/Tidak)? ")
             if kondisi == "Ya":
                 suhu = input("Masukkan suhu yang anda inginkan = ")
                 Ac.ubah(suhu)
-
             elif kondisi == "Tidak":
+                print("Baik, Selamat menikmati ruangan anda\n")
                 break
             else:
-                print("Anda salah memasukkan kondisi, mohon baca kembali perintah yang tertera")
-
+                print("Kondisi yang anda masukkan tidak tersedia, silahkan gunakan salah satu dari pilihan yang disediakan")
+        break
     elif kondisi == "Tidak":
-        print ("AC mati")
+        print ("AC berhasil dimatikan. \nTerima Kasih telah memakai produk AC kami")
         break
     else:
-        print("Anda salah memasukkan kondisi, mohon baca kembali perintah yang tertera")
+        print("Kondisi yang anda masukkan tidak tersedia, silahkan gunakan salah satu dari pilihan yang disediakan")
