@@ -15,7 +15,6 @@ class nama:
     def anggota(nama):
         print(f"Anggota 1 = {nama.nama1}\nAnggota 2 = {nama.nama2}\nAnggota 3 = {nama.nama3}\nAnggota 4 = {nama.nama4}")
 
-
 class Ac:
     def __init__(self, suhu,iden):
         self.suhu = suhu
